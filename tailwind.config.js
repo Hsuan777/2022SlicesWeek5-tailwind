@@ -8,6 +8,8 @@ module.exports = {
         dark: '#650300'
       },
       "secondary":'#FBF2F2',
+      "white": '#ffffff',
+      "black": '#000000'
     }
   },
   plugins: [

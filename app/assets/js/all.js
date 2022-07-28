@@ -1,5 +1,11 @@
 console.log('Hello!');
 
 $(document).ready(() => {
-  console.log('HesSchool Hello!');
+  $('#menu-mobile-btn').on('click', () => {
+    $('#menu-mobile').toggleClass('d-none');
+  });
+  $('#agree').on('click', () => {
+    $('#agreeFalse').toggleClass('d-none');
+    $('#agreeTrue').toggleClass('d-none');
+  })
 });
