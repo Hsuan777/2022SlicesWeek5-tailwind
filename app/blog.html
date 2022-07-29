@@ -1,0 +1,123 @@
+---
+title: 部落格
+layout: ./app/layout.ejs
+engine: ejs
+current: blog
+---
+<!-- 部落格導航 -->
+<div class="bg-primary-dark mb-2">
+  <div class="container flex items-center mx-auto px-3">
+    <ul class="flex py-3">
+      <li class="mr-2 sm:mr-6 md:md-12">
+        <a href="" class="text-white">最新消息</a>
+      </li>
+      <li class="mr-2 sm:mr-6 md:md-12">
+        <a href="" class="text-white">特別企劃</a>
+      </li>
+      <li class="mr-2 sm:mr-6 md:md-12">
+        <a href="" class="text-white">新品上市</a>
+      </li>
+      <li class="">
+        <a href="" class="text-white">鏡框小知識</a>
+      </li>
+    </ul>
+    <span class="ml-auto material-symbols-outlined text-white mr-1 hidden md:block">search</span>
+  </div>
+</div>
+<div class="container mx-auto px-3">
+  <!-- 麵包屑 -->
+  <ul class="flex mb-2">
+    <li>
+      <a href="" class="hover:text-primary-dark hover:underline">首頁</a> /&nbsp;</li>
+    <li>
+      <a href="" class="hover:text-primary-dark hover:underline">部落格</a> /&nbsp;</li>
+    <li>
+      <a href="" class="hover:text-primary-dark hover:underline">特別企劃</a> /&nbsp;</li>
+    <li class="">
+      <a href="" class="text-primary">情人特別企劃</a></li>
+  </ul>
+  <!-- tags -->
+  <ul class="flex flex-wrap text-primary text-bold text-xl">
+    <li class="mr-4">#special</li>
+    <li>#event</li>
+  </ul>
+  <div class="flex justify-between">
+    <section class="w-100 md:w-75 lg:w-66 mb-16 md:mb-10 md:mr-6">
+      <h2>情人特別企劃</h2>
+      <p class="mb-4 mb-md-6">2020 Valentine’s Special</p>
+      <ul>
+        <li>
+          <img src="./assets/images/blogpage-1.png" alt="blogpage-1" class="mb-2"/>
+          <p class="mb-10">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          <img src="./assets/images/blogpage-2.png" alt="blogpage-2" class="mb-2"/>
+          <p class="mb-10">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          <img src="./assets/images/blogpage-3.png" alt="blogpage-3" class="mb-2"/>
+          <p class="mb-10">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。<br>本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          <img src="./assets/images/blogpage-4.png" alt="blogpage-4" class="mb-2"/>
+          <p>2/14(五)-2/20(日) 至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個<br>期間優惠還有~~持他牌鏡框更換鏡片<br>薄型非球面鏡片折300元 濾藍光鏡片折500元<br>快快帶上另一半<br>讓彼此每一次睜開眼，都被愛的視線包圍!</p>
+        </li>
+      </ul>
+    </section>
+    <aside class="hidden md:block text-bold textxt-primary w-25 lg:w-33">
+      <p class="flex algin-items-center text-primary">
+        <span class="material-symbols-outlined">label</span>
+        TAGS
+      </p>
+      <ul class="flex flex-wrap">
+        <li class="mr-4">
+          <a href="" class="text-primary">#special</a>
+        </li>
+        <li class="mr-4 lg:w-50">
+          <a href="" class="text-primary">#sale</a>
+        </li>
+        <li class="mr-4">
+          <a href="" class="text-primary">#new_item</a>
+        </li>
+        <li class="mr-4 lg:w-50">
+          <a href="" class="text-primary">#interview</a>
+        </li>
+        <li class="mr-4 ">
+          <a href="" class="text-primary">#trivia</a>
+        </li>
+        <li class="mr-4 xl:w-75">
+          <a href="" class="text-primary">#news</a>
+        </li>
+        <li>
+          <a href="" class="text-primary">#event</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  <div class="hidden md:block">
+    <ul class="flex border-b pb-4 mb-4">
+      <li class="mr-4">
+        <a href="">Share</a>
+      </li>
+      <li class="mr-4">
+        <a href="./assets/images/logo-facebook.png">
+          <img src="./assets/images/logo-facebook.png" alt="facebook" class="h-[16px] md:h-[24px]"/>
+        </a>
+      </li>
+      <li>
+        <a href="./assets/images/logo-instagram.png">
+          <img src="./assets/images/logo-instagram.png" alt="instagram" class="h-[16px] md:h-[24px]"/>
+        </a>
+      </li>
+    </ul>
+    <!-- 上下一篇 -->
+    <ul class="flex mb-20">
+      <li>
+        <a href="" class="flex items-center text-black hover:text-primary-dark">
+          <span class="material-symbols-outlined mr-3">arrow_back</span>
+          上一篇：街頭潮人訪問 1
+        </a>
+      </li>
+      <li class="ml-auto">
+        <a href="" class="flex items-center text-black hover:text-primary-dark">
+          下一篇：街頭潮人訪問 2
+          <span class="material-symbols-outlined ml-3">arrow_forward</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
