@@ -17,7 +17,6 @@
   "dependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
-    "@tailwindcss/line-clamp": "^0.4.0",
     "autoprefixer": "^9.6.0",
     "browser-sync": "^2.26.7",
     "ejs": "^3.1.2",
@@ -41,6 +40,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.1",
+    "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "gulp-postcss": "^9.0.1",
     "postcss": "^8.4.13",
