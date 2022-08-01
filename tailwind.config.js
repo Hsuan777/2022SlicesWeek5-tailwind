@@ -9,7 +9,7 @@ module.exports = {
       },
       "secondary": "#FBF2F2",
       "white": "#ffffff",
-      "black": "#000000"
+      "black": "#000000",
     },
     fontSize: {
       "sm": ["14px", "1.5"],

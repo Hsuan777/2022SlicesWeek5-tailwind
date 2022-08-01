@@ -1,11 +1,12 @@
 console.log('Hello!');
 
-$(document).ready(() => {
+$(function() {
   $('#menu-mobile-btn').on('click', () => {
-    $('#menu-mobile').toggleClass('d-none');
+    $('#menu-mobile').toggleClass('hidden');
   });
   $('#agree').on('click', () => {
-    $('#agreeFalse').toggleClass('d-none');
-    $('#agreeTrue').toggleClass('d-none');
+    console.log(1);
+    $('#agreeFalse').toggleClass('hidden');
+    $('#agreeTrue').toggleClass('hidden');
   })
-});
+})
