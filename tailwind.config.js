@@ -1,17 +1,24 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
-  content: ["./app/**/*.{html,ejs}"],
+  content: [
+    "./app/**/*.{html,ejs}",
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     extend: {},
+    container: {
+      center: true,
+      padding: "12px",
+    },
     colors: {
-      "primary": {
-        DEFAULT: "#AA0601",
-        dark: "#650300"
-      },
-      "secondary": "#FBF2F2",
-      "white": "#ffffff",
-      "black": "#000000",
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      success: "#198754"
     },
     fontSize: {
+      "exsm":["14px", "1.5"],
       "sm": ["14px", "1.5"],
       "base":["16px", "1.5"],
       "lg": ["18px", "1.5"],
@@ -28,5 +35,6 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
+    require('flowbite/plugin')
   ],
 }

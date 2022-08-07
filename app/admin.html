@@ -1,0 +1,92 @@
+---
+title: Admin
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<div class="flex mb-11">
+  <h2 class="mr-[50px] font-bold text-2xl">Admin</h2>
+  <button type="button" class="flex items-center">
+    <span class="material-icons-outlined text-success mr-2">add</span>
+    Add New Admin
+  </button>
+  <button type="button" class="flex items-center ml-auto mr-6">
+    <span class="material-icons-outlined">search</span>
+  </button>
+  <button type="button" class="flex items-center">
+    <span class="material-icons">notifications_active</span>
+  </button>
+</div>
+<!-- 帳號管理 -->
+<table class="w-full">
+  <thead>
+    <tr class="border-b border-black text-left">
+      <th class="flex items-center">
+        ID
+        <span class="material-icons text-success text-exsm ml-2">arrow_downward</span>
+      </th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Verified</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b">
+      <td>#1</td>
+      <td>Emir Wicks</td>
+      <td>emir.wicks@mail.com</td>
+      <td>Yes</td>
+      <td class="flex items-center py-4">
+        <button type="button" class="ml-auto" data-modal-toggle="modalVisibility">
+          <span class="material-icons hover:text-success mr-6">visibility</span>
+        </button>
+        <button type="button">
+          <span class="material-icons hover:text-success">edit</span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div id="modalVisibility" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full" data-modal-show="true">
+  <div class="w-[480px] max-w-2xl h-full md:h-auto">
+    <div class="flex p-8 bg-white rounded-lg shadow dark:bg-gray-700">
+      <img src="./assets/images/emir.jpeg" alt="emir" class="w-[141px] h-[141px] object-cover rounded mr-6"/>
+      <div class="w-full">
+        <div class="flex items-center mb-1">
+          <p>#1</p>
+          <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="modalVisibility">
+            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <p class="leading-none">Admin</p>
+        <p class="text-2xl font-bold">Emir Wicks</p>
+        <p class="text-sm text-gray-600 mb-3">emir.wicks@mail.com</p>
+        <div class="">
+          <!-- <p class="py-1 px-4 bg-gray-100 text-sm">Verified</p>
+          <button type="button" class="flex ml-auto">
+            <span class="material-icons-outlined text-success">expand_more</span>
+          </button> -->
+          <div id="accordion-collapse" data-accordion="collapse">
+            <h2 id="accordion-collapse-heading" class="mb-8">
+              <button type="button" class="flex items-center w-full bg-white" data-accordion-target="#accordion-collapse-body" aria-expanded="false" aria-controls="accordion-collapse-body">
+                <span class="py-1 px-4 bg-gray-100 text-sm">Verified</span>
+                <svg data-accordion-icon class="w-6 h-6 shrink-0 ml-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+            </h2>
+            <div id="accordion-collapse-body" class="hidden" aria-labelledby="accordion-collapse-heading">
+              <div class="flex">
+                <input type="button" value="Deactivate" class="border border-red-600 text-red-600 py-2 px-8 mr-4 rounded"/>
+                <input type="button" value="Edit" class="border border-success text-white bg-success py-2 px-8 rounded"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,157 +1,136 @@
 ---
-title: 首頁
+title: Assignment
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<!-- banner -->
-<div class="bg-no-repeat bg-center bg-cover bg-[url('../images/home-header.png')] h-[397px] md:h-[787px]">
-  <div class="container mx-auto flex justify-end items-center h-[396px] md:h-[787px] text-primary-dark px-3">
-    <div class="text-right">
-      <p class="md:text-2xl">Promise-Desert 2020 早春系列</p>
-      <h1 class="text-2xl md:text-7xl font-bold">
-        看得清，才能看得遠
-      </h1>
-      <input type="button" class="flex ml-auto bg-primary text-white text-xl py-1 px-3 rounded cursor-pointer hover:bg-primary-dark" value="立即購買">
-    </div>
+<div class="flex mb-11">
+  <h2 class="mr-[50px] font-bold text-2xl">Assignment</h2>
+  <button type="button" class="flex items-center">
+    All Courses
+    <span class="material-icons-outlined text-success ml-2">expand_more</span>
+  </button>
+  <button type="button" class="flex items-center ml-auto mr-6">
+    <span class="material-icons-outlined">search</span>
+  </button>
+  <button type="button" class="flex items-center">
+    <span class="material-icons">notifications_active</span>
+  </button>
+</div>
+<!-- 問題清單 -->
+<div>
+  <div class="flex">
+    <button type="button" class="flex items-center mb-1">
+      All (4)
+      <span class="material-icons-outlined text-success ml-2">expand_more</span>
+    </button>
+    <p class="text-gray-400 ml-auto">2 comments</p>
+  </div>
+  <div class="flex items-start">
+    <ul class="border border-gray-400 w-2/6 mr-4">
+      <li class="p-3 bg-gray-100 border-b border-gray-400">
+        <p class="flex text-exsm mb-1">
+          Chapter Assignment 2
+          <span class="ml-auto">4 hrs ago</span>
+        </p>
+        <h3 class="flex">
+          <span class="font-bold">Please check this file…</span>
+          <span class="text-exsm ml-auto text-gray-500">Emily Wang</span>
+        </h3>
+      </li>
+      <li class="p-3 border-b border-gray-400 hover:bg-gray-100">
+        <p class="flex text-exsm mb-1">
+          Chapter Assignment 1
+          <span class="ml-auto">12 hrs ago</span>
+        </p>
+        <h3 class="flex">
+          <span class="font-bold">My Homework</span>
+          <span class="text-exsm ml-auto text-gray-500">David Xu</span>
+        </h3>
+      </li>
+      <li class="p-3 border-b border-gray-400 hover:bg-gray-100">
+        <p class="flex text-exsm mb-1">
+          Final Assignment
+          <span class="ml-auto">18 hrs ago</span>
+        </p>
+        <h3 class="flex">
+          <span class="font-bold">Have a problem with this…</span>
+          <span class="text-exsm ml-auto text-gray-500">Tony Wei</span>
+        </h3>
+      </li>
+      <li class="p-3 border-gray-400 hover:bg-gray-100">
+        <p class="flex text-exsm mb-1">
+          Final Assignment
+          <span class="ml-auto">19 hrs ago</span>
+        </p>
+        <h3 class="flex">
+          <span class="font-bold">Did I do it right?</span>
+          <span class="text-exsm ml-auto text-gray-500">Christina Lin</span>
+        </h3>
+      </li>
+    </ul>
+    <article class="w-4/6">
+      <header class="flex py-3 px-4 bg-gray-100 border border-b-0 border-gray-400">
+        <div>
+          <p class="text-exsm">Chapter Assignment 2 / HTML&CSS</p>
+          <h3 class="font-bold">Please check this file for me, thanks!</h3>
+        </div>
+        <button type="button" class="ml-auto">
+          <span class="material-icons">more_vert</span>
+        </button>
+      </header>
+      <main class="p-4 border border-gray-400 mb-4">
+        <div class="flex items-center mb-4">
+          <img src="./assets/images/emilywang.jpeg" alt="emilywang" class="avatar mr-4"/>
+          <div class="">
+            <p class="font-bold">Emily Wang</p>
+            <p class="text-sm text-gray-600">10:38 AM (4 hours ago)</p>
+          </div>
+        </div>
+        <div class="pl-14 border-b mb-4">
+          <p class="mb-4">
+            Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the <span class="text-success bg-gray-100">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+          </p>
+          <button class="flex items-center py-2 px-3 bg-gray-100 mb-4">
+            <span class="material-icons mr-2">attach_file</span>
+            HW-2-David.zip
+          </button>
+        </div>
+        <div class="">
+          <div class="flex items-center mb-4">
+            <div class="flex items-center">
+              <img src="./assets/images/andychen.jpeg" alt="andychen" class="avatar mr-4"/>
+              <div class="">
+                <p class="font-bold">Andy Chen (You)</p>
+                <p class="text-sm text-gray-600">13:24 AM (1 hours ago)</p>
+              </div>
+            </div>
+            <div class="ml-auto">
+              <button type="button" class="mr-6">
+                <span class="material-icons-outlined">grade</span>
+              </button>
+              <button type="button" class="">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </div>
+          <p class="pl-14">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>
+          You can:<br><br>
+          • adjust the <span class="text-success bg-gray-100">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="vertical-align">middle</span>) or<br>
+          • change the <span class="text-success bg-gray-100">display</span> so it isn’t inline.</p>
+        </div>
+      </main>
+      <footer class="flex items-center">
+        <a class="mr-6">
+          <span class="material-icons-outlined">chevron_left</span>
+        </a>
+        <a>
+          <span class="material-icons-outlined">chevron_right</span>
+        </a>
+        <input type="button" value="Mark as read" class="border border-success py-2 px-8 text-success rounded ml-auto mr-4 hover:bg-success hover:text-white cursor-pointer" />
+        <input type="button" value="Reply" class="border border-success bg-success py-2 px-8 text-white rounded cursor-pointer" />
+      </footer>
+    </article>
   </div>
 </div>
-<!-- 用專業的心，做專業的事 -->
-<section class="py-10 md:py-20 text-center bg-secondary">
-  <div class="container mx-auto px-3">
-    <h2 class="text-2xl md:text-6xl font-bold text-primary-dark mb-6">用專業的心，做專業的事</h2>
-    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <li class="mb-6 md:mb-12 lg:mb-0">
-        <img src="./assets/images/home-section2-1.png" alt="price" class="mx-auto h-[100px]"/>
-        <h3 class="text-xl font-bold text-primary-dark">單一價格</h3>
-        <p class="text-left">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
-      </li>
-      <li class="mb-6 md:mb-0">
-        <img src="./assets/images/home-section2-2.png" alt="quickly" class="mx-auto h-[100px]"/>
-        <h3 class="text-xl font-bold text-primary-dark">20 分鐘即可取件</h3>
-        <p class="text-left">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
-      </li>
-      <li class="mb-6 md:mb-0">
-        <img src="./assets/images/home-section2-3.png" alt="after-sales service" class="mx-auto h-[100px]"/>
-        <h3 class="text-xl font-bold text-primary-dark">安心售後服務</h3>
-        <p class="text-left">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
-      </li>
-      <li>
-        <img src="./assets/images/home-section2-4.png" alt="about lens" class="mx-auto h-[100px]"/>
-        <h3 class="text-xl font-bold text-primary-dark">關於鏡片</h3>
-        <p class="text-left">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
-      </li>
-    </ul>
-  </div>
-</section>
-<!-- 經典系列鏡框 -->
-<section class="container mx-auto px-3 py-10 md:py-20 text-center">
-  <h2 class="text-2xl md:text-6xl font-bold text-primary-dark mb-6">經典系列鏡框</h2>
-  <ul class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    <li class="mb-6 xl:mb-0">
-      <img src="./assets/images/home-section3-1.png" alt="" class="h-[348px] md:h-[336px] lg:h-[416px] object-cover mx-auto"/>
-      <h3 class="text-6xl font-black text-primary text-italic">OPTICAL</h3>
-    </li>
-    <li class="mb-6 xl:mb-0">
-      <img src="./assets/images/home-section3-2.png" alt="" class="h-[348px] md:h-[336px] lg:h-[416px] object-cover mx-auto"/>
-      <h3 class="text-6xl font-black text-primary text-italic">SUNGLASSES</h3>
-    </li>
-    <li>
-      <img src="./assets/images/home-section3-3.png" alt="" class="h-[348px] md:h-[336px] lg:h-[416px] object-cover mx-auto"/>
-      <h3 class="text-6xl font-black text-primary text-italic">FUNCTIONAL</h3>
-    </li>
-  </ul>
-</section>
-<!-- 聯名設計鏡框 -->
-<section class="bg-no-repeat bg-center bg-cover bg-[url('../images/index-bg-sm.png')] md:bg-[url('../images/index-bg-md.png')] lg:bg-[url('../images/index-bg.png')] text-center py-10 md:py-20">
-  <div class="container mx-auto px-3">
-    <h2 class="text-2xl md:text-6xl font-bold text-white mb-6">聯名設計鏡框</h2>
-    <ul class="flex flex-wrap">
-      <li class="w-100 lg:w-1/2 bg-white mb-6 lg:mb-0">
-        <img src="./assets/images/home-section4-1-sm.png" alt="double A+" class="md:hidden object-cover"/>
-        <img src="./assets/images/home-section4-1.png" alt="double A+" class="hidden md:block object-cover"/>
-        <h3 class="text-3xl font-black text-italic text-primary py-2 lg:border-r border-r-secondary">DOUBLE A+</h3>
-      </li>
-      <li class="w-100 lg:w-1/2 bg-white">
-        <img src="./assets/images/home-section4-2-sm.png" alt="youth" class="md:hidden object-cover"/>
-        <img src="./assets/images/home-section4-2.png" alt="youth" class="hidden md:block object-cover"/>
-        <h3 class="text-3xl font-black text-italic text-primary py-2">YOUTH</h3>
-      </li>
-    </ul>
-  </div>
-</section>
-<!-- 顧客推薦 -->
-<section class="container mx-auto px-3 py-10 md:py-20">
-  <h2 class="text-2xl md:text-6xl text-center font-bold text-primary-dark mb-6">顧客推薦</h2>
-  <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <li class="h-[511px] shadow relative mb-4 md:mb-6 lg:mb-0">
-      <img src="./assets/images/home-section5-1.png" alt="Jessy" class="h-[306px] object-cover w-full"/>
-      <div class="p-4">
-        <p class="mb-2">Jessy</p>
-        <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-      </div>
-      <p class="absolute left-4 bottom-3 text-grey-dark">2021/06/20</p>
-    </li>
-    <li class="h-[511px] shadow relative mb-4 lg:mb-0">
-      <img src="./assets/images/home-section5-2.png" alt="凱倫" class="h-[306px] object-cover w-full"/>
-      <div class="p-4">
-        <p class="mb-2">凱倫</p>
-        <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
-      </div>
-      <p class="absolute left-4 bottom-3 text-grey-dark">2021/04/18</p>
-    </li>
-    <li class="h-[511px] shadow relative mb-4 mb-lg-0">
-      <img src="./assets/images/home-section5-3.png" alt="悠悠" class="h-[306px] object-cover w-full"/>
-      <div class="p-4">
-        <p class="mb-2">悠悠</p>
-        <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
-      </div>
-      <p class="absolute left-4 bottom-3 text-grey-dark">2020/12/25</p>
-    </li>
-    <li class=" h-[511px] shadow relative">
-      <img src="./assets/images/home-section5-4.png" alt="Kyuan" class="h-[306px] object-cover w-full"/>
-      <div class="p-4">
-        <p class="mb-2">Kyuan</p>
-        <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-      </div>
-      <p class="absolute left-4 bottom-3 text-grey-dark">2020/10/31</p>
-    </li>
-  </ul>
-</section>
-<!-- 聯絡我們 -->
-<section class="bg-secondary py-10 md:py-20">
-  <div class="container mx-auto px-3">
-    <h2 class="text-2xl md:text-6xl text-center font-bold text-primary-dark mb-6">聯絡我們</h2>
-    <div class="md:w-3/4 lg:w-1/2 mx-auto">
-      <p class="mb-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-      <form action="">
-        <div class="mb-4">
-          <label for="userName" class="block mb-2">姓名</label>
-          <input type="text" name="" id="userName" class="w-full bg-secondary border py-2 pl-3" placeholder="陳小明" required>
-        </div>
-        <div class="mb-4">
-          <label for="userPhone" class="block mb-2">聯絡電話</label>
-          <input type="tel" name="" id="userPhone" class="w-full bg-secondary border py-2 pl-3" placeholder="0912345678" required>
-        </div>
-        <div class="mb-4">
-          <label for="userEmail" class="block mb-2">電子郵件</label>
-          <input type="email" name="" id="userEmail" class="w-full bg-secondary border py-2 pl-3" placeholder="example@email.com" required>
-        </div>
-        <div class="mb-4">
-          <label for="userComment" class="block mb-2">意見反應</label>
-          <textarea name="" id="userComment" cols="30" rows="10" class="w-full bg-secondary border py-2 pl-3" placeholder="請輸入您的意見" required></textarea>
-        </div>
-        <div class="flex items-start mb-6 mb-md-12">
-          <input type="checkbox" name="" id="agree" class="hidden" required>
-          <span class="material-symbols-outlined" id="agreeFalse">check_box_outline_blank</span>
-          <span class="material-symbols-outlined hidden" id="agreeTrue">check_box</span>
-          <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-        </div>
-        <div class="flex justify-center">
-          <input type="submit" value="確認送出" class="text-center bg-primary text-white w-full md:w-1/2 py-4 rounded cursor-pointer hover:bg-primary-dark">
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
