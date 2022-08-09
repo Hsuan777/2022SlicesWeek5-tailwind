@@ -81,7 +81,7 @@ current: index
           <span class="material-icons">more_vert</span>
         </button>
       </header>
-      <main class="border border-gray-400 mb-4">
+      <main class="relative border border-gray-400 mb-5">
         <div class="flex items-center mb-4 pt-4 pl-4">
           <img src="./assets/images/emilywang.jpeg" alt="emilywang" class="avatar mr-4"/>
           <div class="">
@@ -100,7 +100,7 @@ current: index
           <hr>
         </div>
         <!-- 問題已回覆 -->
-        <div class="">
+        <div id="replied" class="">
           <div class="flex items-center mb-4 px-4">
             <div class="flex items-center">
               <img src="./assets/images/andychen.jpeg" alt="andychen" class="avatar mr-4"/>
@@ -124,67 +124,71 @@ current: index
           • change the <span class="text-success bg-gray-100">display</span> so it isn’t inline.</p>
         </div>
         <!-- Reply -->
-        <div class="hidden py-4 px-6 bg-gray-100 border-t border-b border-gray-400">
-          <ul class="flex items-center">
-            <li class="mr-6">
-              <button type="button" class="flex items-center">
-                Body Text
-                <span class="material-icons-outlined ml-2">arrow_drop_down</span>
-              </button>
-            </li>
-            <li class="mr-6">
-              <button type="button" class="flex">
-                <span class="material-icons-outlined ml-2">format_bold</span>
-              </button>
-            </li>
-            <li class="mr-6">
-              <button type="button" class="flex">
-                <span class="material-icons-outlined ml-2">format_italic</span>
-              </button>
-            </li>
-            <li class="mr-6">
-              <button type="button" class="flex">
-                <span class="material-icons-outlined ml-2">format_list_bulleted</span>
-              </button>
-            </li>
-            <li class="mr-6">
-              <button type="button" class="flex">
-                <span class="material-icons-outlined ml-2">format_list_numbered</span>
-              </button>
-            </li>
-            <li class="mr-6">
-              <button type="button" class="flex">
-                <span class="material-icons-outlined ml-2">arrow_drop_down</span>
-              </button>
-            </li>
-            <li class="mr-6">
-              <button type="button" class="flex">
-                <span class="material-icons-outlined ml-2">image</span>
-              </button>
-            </li>
-            <li class="mr-6">
-              <button type="button" class="flex">
-                <span class="material-icons-outlined ml-2">attachment</span>
-              </button>
-            </li>
-            <li>
-              <button type="button" class="flex">
-                <span class="material-icons-outlined ml-2">code</span>
-              </button>
-            </li>
-          </ul>
+        <div id="replyTextarea" class="hidden">
+          <div  class="py-4 px-6 bg-gray-100 border-t border-b border-gray-400">
+            <ul class="flex items-center">
+              <li class="mr-6">
+                <button type="button" class="flex items-center">
+                  Body Text
+                  <span class="material-icons-outlined ml-2">arrow_drop_down</span>
+                </button>
+              </li>
+              <li class="mr-6">
+                <button type="button" class="flex">
+                  <span class="material-icons-outlined ml-2">format_bold</span>
+                </button>
+              </li>
+              <li class="mr-6">
+                <button type="button" class="flex">
+                  <span class="material-icons-outlined ml-2">format_italic</span>
+                </button>
+              </li>
+              <li class="mr-6">
+                <button type="button" class="flex">
+                  <span class="material-icons-outlined ml-2">format_list_bulleted</span>
+                </button>
+              </li>
+              <li class="mr-6">
+                <button type="button" class="flex">
+                  <span class="material-icons-outlined ml-2">format_list_numbered</span>
+                </button>
+              </li>
+              <li class="mr-6">
+                <button type="button" class="flex">
+                  <span class="material-icons-outlined ml-2">arrow_drop_down</span>
+                </button>
+              </li>
+              <li class="mr-6">
+                <button type="button" class="flex">
+                  <span class="material-icons-outlined ml-2">image</span>
+                </button>
+              </li>
+              <li class="mr-6">
+                <button type="button" class="flex">
+                  <span class="material-icons-outlined ml-2">attachment</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="flex">
+                  <span class="material-icons-outlined ml-2">code</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <textarea name="" id="" rows="10" class="w-full border-0 mb-0"></textarea>
         </div>
-        <textarea name="" id="" rows="10" class="w-full border-0 mb-0 hidden"></textarea>
+        <div id="replyBtnGroup" class="absolute right-0 -bottom-[3.5rem] flex items-center">
+          <input type="button" value="Mark as read" class="border border-success py-2 px-8 text-success rounded ml-auto mr-4 hover:bg-success hover:text-white cursor-pointer" />
+          <input type="button" value="Reply" id="reply" class="border border-success bg-success py-2 px-8 text-white rounded cursor-pointer" />
+        </div>
       </main>
-      <footer class="flex items-center">
+      <footer class="">
         <a class="mr-6">
           <span class="material-icons-outlined">chevron_left</span>
         </a>
         <a>
           <span class="material-icons-outlined">chevron_right</span>
         </a>
-        <input type="button" value="Mark as read" class="border border-success py-2 px-8 text-success rounded ml-auto mr-4 hover:bg-success hover:text-white cursor-pointer" />
-        <input type="button" value="Reply" class="border border-success bg-success py-2 px-8 text-white rounded cursor-pointer" />
       </footer>
     </article>
   </div>
