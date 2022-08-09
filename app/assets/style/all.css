@@ -6,6 +6,9 @@
   html {
     font-family: -apple-system, "Roboto", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
+  body {
+    margin-bottom: 0;
+  }
 }
 
 @layer components {

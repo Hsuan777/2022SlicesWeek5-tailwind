@@ -18,7 +18,6 @@ current: index
     <span class="material-icons">notifications_active</span>
   </button>
 </div>
-<!-- 問題清單 -->
 <div>
   <div class="flex">
     <button type="button" class="flex items-center mb-1">
@@ -28,8 +27,9 @@ current: index
     <p class="text-gray-400 ml-auto">2 comments</p>
   </div>
   <div class="flex items-start">
+    <!-- 問題清單 -->
     <ul class="border border-gray-400 w-2/6 mr-4">
-      <li class="p-3 bg-gray-100 border-b border-gray-400">
+      <li class="p-3 bg-gray-100 border-b border-gray-400 cursor-pointer">
         <p class="flex text-exsm mb-1">
           Chapter Assignment 2
           <span class="ml-auto">4 hrs ago</span>
@@ -39,7 +39,7 @@ current: index
           <span class="text-exsm ml-auto text-gray-500">Emily Wang</span>
         </h3>
       </li>
-      <li class="p-3 border-b border-gray-400 hover:bg-gray-100">
+      <li class="p-3 border-b border-gray-400 hover:bg-gray-100 cursor-pointer">
         <p class="flex text-exsm mb-1">
           Chapter Assignment 1
           <span class="ml-auto">12 hrs ago</span>
@@ -49,7 +49,7 @@ current: index
           <span class="text-exsm ml-auto text-gray-500">David Xu</span>
         </h3>
       </li>
-      <li class="p-3 border-b border-gray-400 hover:bg-gray-100">
+      <li class="p-3 border-b border-gray-400 hover:bg-gray-100 cursor-pointer">
         <p class="flex text-exsm mb-1">
           Final Assignment
           <span class="ml-auto">18 hrs ago</span>
@@ -59,7 +59,7 @@ current: index
           <span class="text-exsm ml-auto text-gray-500">Tony Wei</span>
         </h3>
       </li>
-      <li class="p-3 border-gray-400 hover:bg-gray-100">
+      <li class="p-3 border-gray-400 hover:bg-gray-100 cursor-pointer">
         <p class="flex text-exsm mb-1">
           Final Assignment
           <span class="ml-auto">19 hrs ago</span>
@@ -70,6 +70,7 @@ current: index
         </h3>
       </li>
     </ul>
+    <!-- 詳細內容 -->
     <article class="w-4/6">
       <header class="flex py-3 px-4 bg-gray-100 border border-b-0 border-gray-400">
         <div>
@@ -80,15 +81,15 @@ current: index
           <span class="material-icons">more_vert</span>
         </button>
       </header>
-      <main class="p-4 border border-gray-400 mb-4">
-        <div class="flex items-center mb-4">
+      <main class="border border-gray-400 mb-4">
+        <div class="flex items-center mb-4 pt-4 pl-4">
           <img src="./assets/images/emilywang.jpeg" alt="emilywang" class="avatar mr-4"/>
           <div class="">
             <p class="font-bold">Emily Wang</p>
             <p class="text-sm text-gray-600">10:38 AM (4 hours ago)</p>
           </div>
         </div>
-        <div class="pl-14 border-b mb-4">
+        <div class="pl-[4.5rem] mb-4 pr-4">
           <p class="mb-4">
             Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the <span class="text-success bg-gray-100">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
           </p>
@@ -96,9 +97,11 @@ current: index
             <span class="material-icons mr-2">attach_file</span>
             HW-2-David.zip
           </button>
+          <hr>
         </div>
+        <!-- 問題已回覆 -->
         <div class="">
-          <div class="flex items-center mb-4">
+          <div class="flex items-center mb-4 px-4">
             <div class="flex items-center">
               <img src="./assets/images/andychen.jpeg" alt="andychen" class="avatar mr-4"/>
               <div class="">
@@ -115,11 +118,63 @@ current: index
               </button>
             </div>
           </div>
-          <p class="pl-14">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>
+          <p class="pl-[4.5rem] pr-4 pb-4">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>
           You can:<br><br>
           • adjust the <span class="text-success bg-gray-100">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="vertical-align">middle</span>) or<br>
           • change the <span class="text-success bg-gray-100">display</span> so it isn’t inline.</p>
         </div>
+        <!-- Reply -->
+        <div class="hidden py-4 px-6 bg-gray-100 border-t border-b border-gray-400">
+          <ul class="flex items-center">
+            <li class="mr-6">
+              <button type="button" class="flex items-center">
+                Body Text
+                <span class="material-icons-outlined ml-2">arrow_drop_down</span>
+              </button>
+            </li>
+            <li class="mr-6">
+              <button type="button" class="flex">
+                <span class="material-icons-outlined ml-2">format_bold</span>
+              </button>
+            </li>
+            <li class="mr-6">
+              <button type="button" class="flex">
+                <span class="material-icons-outlined ml-2">format_italic</span>
+              </button>
+            </li>
+            <li class="mr-6">
+              <button type="button" class="flex">
+                <span class="material-icons-outlined ml-2">format_list_bulleted</span>
+              </button>
+            </li>
+            <li class="mr-6">
+              <button type="button" class="flex">
+                <span class="material-icons-outlined ml-2">format_list_numbered</span>
+              </button>
+            </li>
+            <li class="mr-6">
+              <button type="button" class="flex">
+                <span class="material-icons-outlined ml-2">arrow_drop_down</span>
+              </button>
+            </li>
+            <li class="mr-6">
+              <button type="button" class="flex">
+                <span class="material-icons-outlined ml-2">image</span>
+              </button>
+            </li>
+            <li class="mr-6">
+              <button type="button" class="flex">
+                <span class="material-icons-outlined ml-2">attachment</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="flex">
+                <span class="material-icons-outlined ml-2">code</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <textarea name="" id="" rows="10" class="w-full border-0 mb-0 hidden"></textarea>
       </main>
       <footer class="flex items-center">
         <a class="mr-6">
