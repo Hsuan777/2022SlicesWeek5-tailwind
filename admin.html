@@ -1,10 +1,70 @@
----
-title: Admin
-layout: ./app/layout.ejs
-engine: ejs
-current: admin
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+<body>
+  <div class="flex">
+    <aside class="relative bg-gray-100 max-h-full w-3/12">
+      <img src="./assets/images/logo-ANSWER.svg" alt="logo" class="pt-8 pl-8 mb-8"/>
+      <ul class="menu h-96">
+        <li class="mb-6 pl-8">
+          <a href="" class="flex items-center hover:text-success">
+            <span class="material-icons mr-4">insert_chart</span>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="mb-6 pl-8">
+          <a href="" class="flex items-center hover:text-success">
+            <span class="material-icons mr-4">question_answer</span>
+            <span>Question</span>
+          </a>
+        </li>
+        <li class="mb-6 pl-8">
+          <a href="" class="flex items-center hover:text-success">
+            <span class="material-icons mr-4">assignment</span>
+            <span>Assignment</span>
+          </a>
+        </li>
+        <li class="mb-6 pl-8">
+          <a href="" class="flex items-center hover:text-success">
+            <span class="material-icons mr-4">video_library</span>
+            <span>Course</span>
+          </a>
+        </li>
+        <li class="mb-6 pl-8">
+          <a href="" class="flex items-center hover:text-success">
+            <span class="material-icons mr-4">people</span>
+            <span>Admin</span>
+          </a>
+        </li>
+        <li class="pl-8">
+          <a href="" class="flex items-center hover:text-success">
+            <span class="material-icons mr-4">settings</span>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+      <div class="absolute left-8 bottom-10 flex items-center">
+        <img src="./assets/images/andychen.jpeg" alt="andychen" class="avatar mr-4"/>
+        <div class="">
+          <p class="font-bold">Andy Chen</p>
+          <p class="text-sm text-gray-600">andy0401@mail.com</p>
+        </div>
+      </div>
+    </aside>
+    <main class="w-4/12 p-8 grow">
+      
 <div class="flex mb-11">
   <h2 class="mr-[50px] font-bold text-2xl">Admin</h2>
   <button type="button" class="flex items-center">
@@ -216,3 +276,12 @@ current: admin
     </div>
   </div>
 </div>
+
+    </main>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
